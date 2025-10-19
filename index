@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REACTIVES Legal</title>
+  <style>
+    :root {
+      --bg1: #0a0b12;
+      --grad1: #0040ff; /* darker blue */
+      --grad2: #ff00a0;
+      --text: #f5f5f5;
+      --muted: #b0b0b0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(circle at top left, var(--grad1)20%, transparent 70%), 
+                  radial-gradient(circle at bottom right, var(--grad2)20%, transparent 70%), 
+                  var(--bg1);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, var(--grad1), var(--grad2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a.button {
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 12px;
+      background: linear-gradient(90deg, var(--grad1), var(--grad2));
+      color: #000;
+      font-weight: 700;
+      box-shadow: 0 0 18px rgba(255,255,255,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 24px rgba(255,255,255,0.4);
+    }
+    footer {
+      position: absolute;
+      bottom: 16px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <h1>REACTIVES</h1>
+  <p>Official legal hub for REACTIVES — access our Privacy Policy and Terms of Use below.</p>
+  <div class="buttons">
+    <a class="button" href="privacy-policy.html">Privacy Policy</a>
+    <a class="button" href="terms-of-use.html">Terms of Use</a>
+  </div>
+  <footer>© 2025 REACTIVES</footer>
+</body>
+</html>
